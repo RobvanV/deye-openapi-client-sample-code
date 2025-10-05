@@ -19,7 +19,6 @@ if __name__ == '__main__':
     data = {
             "appSecret": "346bb5e95ec2d3adb895ff01f54e8e46",      # Replace with your appSecret
             "email": "Rob.van.voorbergen@hetnet.nl",      # Replace with your email
-                            #   "companyId": "0", Replace with your companyId
             "password": "35de3ea327784618385284a8b79c69efede850327225acb8eaa9ce938a383e05"
     }
     try:
