@@ -15,15 +15,12 @@ if __name__ == '__main__':
     headers = {
         'Content-Type': 'application/json'
     }
-    password = 'Deye4RobvanV@6951'             # Replace with your password for www.deyecloud.com
-    sha256_hash = hashlib.sha256()
-    sha256_hash.update(password.encode('utf-8'))
-    passwordWith256 = sha256_hash.hexdigest()
+    
     data = {
             "appSecret": "346bb5e95ec2d3adb895ff01f54e8e46",      # Replace with your appSecret
             "email": "Rob.van.voorbergen@hetnet.nl",      # Replace with your email
                             #   "companyId": "0", Replace with your companyId
-            "password": passwordWith256
+            "password": "35de3ea327784618385284a8b79c69efede850327225acb8eaa9ce938a383e05"
     }
     try:
         response = requests.post(url, headers=headers, json=data)
