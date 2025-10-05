@@ -10,19 +10,19 @@ When companyId is provided, the token retrieved will correspond to the business 
 obtained through endpoints ‘/v1.0/account/info’
 """
 if __name__ == '__main__':
-    appId = '000000000000000'      # Replace with  your appId
+    appId = '202510052724002'      # Replace with  your appId
     url = variable.baseurl + '/account/token?appId=' + appId
     headers = {
         'Content-Type': 'application/json'
     }
-    password = '123456'             # Replace with your password for www.deyecloud.com
+    password = 'Deye4RobvanV@6951'             # Replace with your password for www.deyecloud.com
     sha256_hash = hashlib.sha256()
     sha256_hash.update(password.encode('utf-8'))
     passwordWith256 = sha256_hash.hexdigest()
     data = {
-            "appSecret": "000000000000000",      # Replace with your appSecret
-            "email": "*****@deye.com.cn",      # Replace with your email
-            "companyId": "0",                  # Replace with your companyId
+            "appSecret": "346bb5e95ec2d3adb895ff01f54e8e46",      # Replace with your appSecret
+            "email": "Rob.van.voorbergen@hetnet.nl",      # Replace with your email
+                            #   "companyId": "0", Replace with your companyId
             "password": passwordWith256
     }
     try:
