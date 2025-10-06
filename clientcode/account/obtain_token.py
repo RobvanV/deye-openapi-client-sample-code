@@ -10,15 +10,15 @@ When companyId is provided, the token retrieved will correspond to the business 
 obtained through endpoints ‘/v1.0/account/info’
 """
 if __name__ == '__main__':
-    appId = '202510052724002'      # Replace with  your appId
-    url = variable.baseurl + '/account/token?appId=' + appId
+    appId = '202510052724002'      
+    url = 'https://eu1-developer.deyecloud.com/account/token?appId=' + appId
     headers = {
         'Content-Type': 'application/json'
     }
     
     data = {
-            "appSecret": "346bb5e95ec2d3adb895ff01f54e8e46",      # Replace with your appSecret
-            "email": "Rob.van.voorbergen@hetnet.nl",      # Replace with your email
+            "appSecret": "346bb5e95ec2d3adb895ff01f54e8e46",      
+            "email": "Rob.van.voorbergen@hetnet.nl",      
             "password": "35de3ea327784618385284a8b79c69efede850327225acb8eaa9ce938a383e05"
     }
     try:
