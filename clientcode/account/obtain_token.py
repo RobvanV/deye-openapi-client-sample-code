@@ -1,6 +1,6 @@
 import requests
 import hashlib
-from clientcode import variable
+# from clientcode import variable
 """
 The token serves as the credential for accessing resources. Currently, registration via mobile number, email address, 
 or username is supported on DeyeCloud. Users can choose one of three options for login (either the mobile, email, 
@@ -11,7 +11,7 @@ obtained through endpoints ‘/v1.0/account/info’
 """
 if __name__ == '__main__':
     appId = '202510052724002'      
-    url = 'https://eu1-developer.deyecloud.com/account/token?appId=' + appId
+    url = 'https://eu1-developer.deyecloud.com/v1.0/account/token?appId=' + appId
     headers = {
         'Content-Type': 'application/json'
     }
